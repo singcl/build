@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="common.css">
+<title>扁平化开关</title>
+</head>
+<body>
+<div class="panel-body" data-ng-app="myApp" data-ng-controller="myCtrl">
+	<div class="m-b-sm">
+	<label class="i-switch bg-info pull-right">
+		<input type="checkbox" data-ng-model="rusult">
+		<i></i>
+	</label>
+	<span class="" data-ng-class="{'font-color':rusult}">Fix Header</span>
+	<i data-ng-bind="text"></i>
+</div>
+</div>
+
+<script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/jquery/bootstrap.js"></script>
+<script type="text/javascript" src="../vendor/angular/angular.js"></script>
+<script type="text/javascript">
+	angular.module("myApp",[]).
+	controller("myCtrl",function($scope) {
+		$scope.text = "By Singcl!";
+	})
+</script>
+</body>
+</html>

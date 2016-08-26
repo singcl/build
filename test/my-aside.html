@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!-- 该meta标签是能否正确载入媒体查询类的关键 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="icons/favicon.ico">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/simple-line-icons.css">
+<link rel="stylesheet" type="text/css" href="../css/font.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<link rel="stylesheet" type="text/css" href="common.css">
+	<title>Angular|侧边栏</title>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="include-tpl app-aside hidden-xs {{app.settings.asideColor}}">
+	<div class="aside-wrap">
+	<!-- if you want to use a custom scroll when aside fixed, use the slimScroll
+    <div class="navi-wrap" ui-jq="slimScroll" ui-options="{height:'100%', size:'8px'}">
+  -->
+		<div class="navi-wrap">
+		    <!-- user -->
+		    <div class="clearfix text-center hidden-xs show" id="aside-user">
+		    	<div class="dropdown wrapper" dropdown>
+		    		<a>
+		    			<span class="thumb-lg avatar m-t-sm w-auto-folded">
+		    				<img src="../img/h1.jpg" class="img-full" alt="...">
+		    			</span>
+		    		</a>
+		    		<a class="dropdown-toggle hidden-folded" dropdown-toggle>
+		    			<span class="clear">
+		    				<span class="block m-t-sm">
+		    					<strong class="font-bold text-lt">Jing.Miao</strong>
+		    					<b class="caret"></b>
+		    				</span>
+		    				<span class="text-muted text-xs block">Beautiful Girl</span>
+		    			</span>
+		    		</a>
+		    		<!-- dropdown menu -->
+		    		<ul class="dropdown-menu animated fadeInRight w hidden-folded" dropdown-menu>
+		    			<li class="wrapper b-b m-b-sm bg-info m-t-n-xs">
+		    				<span class="top arrow hidden-folden arrow-info"></span>
+		    				<div><p>300MB/500MB</p></div>
+		    				<progressbar class="progress-striped active progress-xs m-b-none dker" type="success" value="56"></progressbar>
+		    			</li>
+		    			<li><a href>设置</a></li>
+		    			<li><a href>简介</a></li>
+		    			<li><a href><b class="badge bg-info pull-right">2</b>通知</a></li>
+		    			<li class="divider"></li>
+		    			<li><a href>退出</a></li>
+		    		</ul>
+		    		<!-- / dropdown menu -->
+		    	</div>
+		    	<div class="line dk hidden-folded"></div>
+		    </div>
+	        <!-- user -->
+
+		    <!-- nav -->
+		    <nav></nav>
+		    <!--/ nav -->
+        
+            <!--  aside footer -->
+            <div class="wrapper m-t">
+        	    <div class="text-center-folded">
+        	    	<span class="pull-right pull-none-folded">59%</span>
+        	    	<span class="hidden-folded">Wangyunzi</span>
+        	    </div>
+        	    <progressbar class="progress-striped active progress-xxs m-t-sm" value="59" type="info"></progressbar>
+        	    <div class="text-center-folded">
+        	    	<span class="pull-right pull-none-folded">32%</span>
+        	    	<span class="hidden-folded">Rongyun</span>
+        	    </div>
+        	    <div class="progress progress-xxs m-t-sm">
+        	    	<div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 32%"></div>
+        	    </div>
+            </div>
+            <!--  / aside footer -->
+		</div>
+	</div>
+</div>
+
+<!-- <canvas id="mhd-canvas" width="1366px" height="600px"></canvas> -->
+<script type="text/javascript" src="../vendor/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../vendor/jquery/bootstrap.js"></script>
+<script type="text/javascript" src="../vendor/angular/angular.js"></script>
+<script src="../vendor/angular/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="../vendor/angular/angular-animate/angular-animate.js"></script>
+
+<!-- lazyload -->
+ <!-- <script src="../vendor/angular/oclazyload/ocLazyLoad.js"></script> -->
+
+ <script type="text/javascript" src="js/app.js"></script>
+ <script type="text/javascript" src="js/controller.js"></script>
+ <script src="../js/services/ui-load.js"></script>
+ <script src="../js/directives/ui-jq.js"></script>
+ <script type="text/javascript" src="config.lazyload.js"></script>
+ <script type="text/javascript" src="js/directives/ui-shift.js"></script>
+ <script type="text/javascript" src="js/directives/ui-fullscreen.js"></script>
+ <script type="text/javascript" src="js/controllers/bootstrap.js"></script>
+
+<!--  canvas -->
+<!-- <script type="text/javascript" src="js/mhd-canvas.js"></script> -->
+</body>
+</html>
